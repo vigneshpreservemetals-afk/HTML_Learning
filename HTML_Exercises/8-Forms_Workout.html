@@ -7,24 +7,36 @@
     </head>
 
     <body>
+
+        <form>
         
         <div class="registration_forms-username">
             <label for="username"> <span>Username</span> <span style="color: red;"">*</span> </label>
             <input type="text" name="username" id="username" required>
-        </div>
+        </div> &nbsp;&nbsp;
 
         <div class="registration_forms-password">
             <label for="password"> <span> Password </span> <span style="color: red;"> * </span></label>
             <input type="password" name="password" id="password" required>
-        </div>
+        </div> &nbsp;&nbsp;
 
         <div class="registration_forms-telephone">
             <label for="telephone"> <span> telephone </span> <span style="color: red;"> * </span></label>
-            <input type="number" name="telephone" id="telephone" required maxlength="10" pattern="[0-9]{6,10}">
+            <input type="tel" name="telephone" id="telephone" pattern="[0-9]{6,10}"
+            minlength="6" 
+            maxlength="10"
+            required>
+        </div> &nbsp;&nbsp;
+
+        <div class="buttons"> 
+
+            <button type="submit"> register </button> 
+            <button> cancel </button>
+
         </div>
 
-        <button type="submit"> Register </button>
-        
+        </form>
+
 
     </body>
 </html>
