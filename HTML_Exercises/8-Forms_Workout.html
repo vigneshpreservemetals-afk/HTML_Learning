@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+
+        <title> Forms Sample </title>
+
+    </head>
+
+    <body>
+        
+        <div class="registration_forms-username">
+            <label for="username"> <span>Username</span> <span style="color: red;"">*</span> </label>
+            <input type="text" name="username" id="username" required>
+        </div>
+
+        <div class="registration_forms-password">
+            <label for="password"> <span> Password </span> <span style="color: red;"> * </span></label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div class="registration_forms-telephone">
+            <label for="telephone"> <span> telephone </span> <span style="color: red;"> * </span></label>
+            <input type="number" name="telephone" id="telephone" required maxlength="10" pattern="[0-9]{6,10}">
+        </div>
+
+        <button type="submit"> Register </button>
+        
+
+    </body>
+</html>
